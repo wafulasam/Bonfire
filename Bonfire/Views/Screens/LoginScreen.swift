@@ -9,35 +9,44 @@ struct LoginScreen: View {
     @State private var password: String = ""
     
     var body: some View {
-            VStack {
-                Image("sam").resizable().scaledToFit()
-                // text fields
-                TextField("Email", text: $email).disableAutocorrection(true)
-                SecureField("Password", text: $password).disableAutocorrection(true)
-            }
-            .textFieldStyle(.roundedBorder)
-            .padding(40)
+        VStack {
+            // image
+            Image("sam")
+                .resizable()
+                .scaledToFit()
+                .clipShape(Circle())
+                .frame(width: 100, height: 100)
+                .overlay(Circle().stroke(Color.blue))
+                //.shadow(radius: 5)
             
-            Button(action: {}) {
-                PrimaryButton(
-                    imageName: "lock",
-                    label: "Continue",
-                    textColor: .white,
-                    backgroundColor: .blue
-                )
-            }
+            // text fields
+            TextField("Email", text: $email).disableAutocorrection(true)
+            SecureField("Password", text: $password).disableAutocorrection(true)
+        }
+        .textFieldStyle(.roundedBorder)
+        .padding(40)
+            
+        Button(action: {}) {
+            PrimaryButton(
+                imageName: "lock",
+                label: "Continue",
+                textColor: .white,
+                backgroundColor: .blue
+            )
+        }
         
         Text("Or")
-            
-            Button(action: {}) {
-                SocialButton(
-                    imageName: "mail",
-                    label: "Login with Gmail",
-                    textColor: .white,
-                    backgroundColor: .red
-                )
-            }
-    }
+        
+        // social button
+        Button(action: {}) {
+            SocialButton(
+                imageName: "mail",
+                label: "Login with Gmail",
+                textColor: .white,
+                backgroundColor: .red
+            )
+        }
+}
 }
 
 struct LoginScreen_Previews: PreviewProvider {
