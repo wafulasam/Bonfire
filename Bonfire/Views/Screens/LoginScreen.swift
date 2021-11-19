@@ -30,7 +30,7 @@ struct LoginScreen: View {
         Button(action: {}) {
             PrimaryButton(
                 imageName: "lock",
-                label: "Continue",
+                label: "Login",
                 textColor: .white,
                 backgroundColor: .blue
             )
@@ -47,6 +47,11 @@ struct LoginScreen: View {
                 backgroundColor: .red
             )
         }
+        
+        // Link
+        Link("Forgot Password",
+             destination: URL(string: "https://designcode.io")!
+        )
 }
 }
 
