@@ -7,7 +7,8 @@ struct ContentView: View {
     var body: some View {
         // HomeScreen()
         // LoginScreen()
-        MapScreen()
+        // MapScreen()
+        LocationDetailsScreen()
     }
 }
 

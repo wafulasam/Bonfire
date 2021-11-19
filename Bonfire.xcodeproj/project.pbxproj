@@ -19,6 +19,7 @@
 		ACE9279F2747A90300BE06FD /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9279E2747A90300BE06FD /* SocialButton.swift */; };
 		ACE927A12747AFD500BE06FD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE927A02747AFD500BE06FD /* MapView.swift */; };
 		ACE927A32747B05100BE06FD /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE927A22747B05100BE06FD /* MapScreen.swift */; };
+		ACE927A52747B2E600BE06FD /* LocationDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE927A42747B2E600BE06FD /* LocationDetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ACE9279E2747A90300BE06FD /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 		ACE927A02747AFD500BE06FD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		ACE927A22747B05100BE06FD /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		ACE927A42747B2E600BE06FD /* LocationDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				AC472A302746CFEF00BBFA86 /* HomeScreen.swift */,
 				AC472A392746E6BF00BBFA86 /* LoginScreen.swift */,
 				ACE927A22747B05100BE06FD /* MapScreen.swift */,
+				ACE927A42747B2E600BE06FD /* LocationDetailsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				ACE927A32747B05100BE06FD /* MapScreen.swift in Sources */,
 				ACE9279D2747A02A00BE06FD /* PrimaryButton.swift in Sources */,
 				ACE927A12747AFD500BE06FD /* MapView.swift in Sources */,
+				ACE927A52747B2E600BE06FD /* LocationDetailsScreen.swift in Sources */,
 				AC05D68C2746CBC600E66E3A /* ContentView.swift in Sources */,
 				AC05D68A2746CBC600E66E3A /* BonfireApp.swift in Sources */,
 				AC472A312746CFEF00BBFA86 /* HomeScreen.swift in Sources */,

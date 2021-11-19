@@ -11,17 +11,18 @@ struct LoginScreen: View {
     var body: some View {
         VStack {
             // image
-            Image("sam")
-                .resizable()
-                .scaledToFit()
-                .clipShape(Circle())
-                .frame(width: 100, height: 100)
-                .overlay(Circle().stroke(Color.blue))
-                //.shadow(radius: 5)
+            CircleImage(
+                width: 100,
+                height: 100,
+                strokeColor: .blue,
+                lineWidth: false,
+                shadow: false
+            )
             
             // text fields
             TextField("Email", text: $email).disableAutocorrection(true)
             SecureField("Password", text: $password).disableAutocorrection(true)
+            
         }
         .textFieldStyle(.roundedBorder)
         .padding(40)

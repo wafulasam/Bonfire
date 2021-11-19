@@ -9,7 +9,7 @@ struct HomeScreen: View {
             Text("Bonfire Adventures")
                 .font(.title)
                 .foregroundColor(.green)
-                .fontWeight(.bold)
+                .font(.system(size: 32, weight: .bold, design: .default))
             Text("Experience Dignity. You'll Love it!")
                 .font(.subheadline)
         }
