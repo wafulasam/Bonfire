@@ -10,6 +10,10 @@ struct LoginScreen: View {
     
     var body: some View {
         VStack {
+            Text("Welcome back!")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .padding(.bottom, 20)
             // image
             CircleImage(
                 width: 100,
