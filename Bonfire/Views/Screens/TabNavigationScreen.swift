@@ -1,9 +1,5 @@
-//
 //  TabNavigationScreen.swift
 //  Bonfire
-//
-//  Created by Sam Wafula on 19/11/2021.
-//
 
 import SwiftUI
 
@@ -11,35 +7,34 @@ struct TabNavigationScreen: View {
     var body: some View {
         // Tab views
         TabView {
-            Text("First Tab")
+            Text("Destinations")
                 //.badge(10)
                 .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("First")
+                    Image(systemName: "globe.europe.africa")
+                    Text("Explore")
                 }
-            LocationDetailsScreen()
+            DestinationScreen()
                 .tabItem {
-                    Image(systemName: "2.square.fill")
-                    Text("Details")
+                    Image(systemName: "airplane")
+                    Text("Trips and Bookings")
                 }
-            MapScreen()
+            Text("Deals")
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("Map")
+                    Image(systemName: "giftcard")
+                    Text("Deals")
                 }
-            Text("Forth Tab")
+            Text("My Account")
                 //.badge(10)
                 .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("Fourth")
+                    Image(systemName: "person.circle")
+                    Text("Profile")
                 }
         }
-//        .onAppear() {
-//            UITabBar.appearance().barTintColor = .yellow
-//            UITabBar.appearance().backgroundColor = UIColor.red
-//        }
-//        .accentColor(.yellow)
-//        .navigationTitle("TabView Demo")
+        .accentColor(.red)
+        .onAppear() {
+            //UITabBar.appearance().barTintColor = .yellow
+            UITabBar.appearance().backgroundColor = UIColor.white
+        }
     }
 }
 

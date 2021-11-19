@@ -33,7 +33,7 @@ struct LoginScreen: View {
             
         Button(action: {}) {
             PrimaryButton(
-                imageName: "lock",
+                imageName: "lock.rotation",
                 label: "Login",
                 textColor: .white,
                 backgroundColor: .blue
@@ -45,7 +45,7 @@ struct LoginScreen: View {
         // social button
         Button(action: {}) {
             SocialButton(
-                imageName: "mail",
+                imageName: "envelope.fill",
                 label: "Login with Gmail",
                 textColor: .white,
                 backgroundColor: .red

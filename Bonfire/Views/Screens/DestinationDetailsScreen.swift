@@ -1,9 +1,9 @@
-//  LocationDetailsScreen.swift
+//  DestinationDetailsScreen.swift
 //  Bonfire
 
 import SwiftUI
 
-struct LocationDetailsScreen: View {
+struct DestinationDetailsScreen: View {
     
     // state management
     @State private var isBooked = false
@@ -27,16 +27,23 @@ struct LocationDetailsScreen: View {
             
             VStack(alignment: .leading) {
                 // title
-                Text("Truck House")
+                Text("Palm Ridge Resort")
                     // .font(.title)
                     .font(.system(size: 40, weight: .bold, design: .default))
                     .foregroundColor(Color.blue)
                 HStack {
-                    Text("Cool cottage in Kenya")
+                    Text("Diani, Kenya")
                         // .font(.subheadline)
                         .font(.system(size: 18, weight: .medium, design: .default))
                     Spacer()
-                    Text("Machakos")
+                    // ratings
+                    Image(systemName: "star.fill")
+                        .foregroundColor(Color.red)
+                    Image(systemName: "star.fill")
+                        .foregroundColor(Color.red)
+                    Image(systemName: "star.fill")
+                        .foregroundColor(Color.red)
+                    Image(systemName: "star.fill")
                         .foregroundColor(Color.red)
                 }
                 Divider()
@@ -52,21 +59,22 @@ struct LocationDetailsScreen: View {
                 isBooked.toggle()
             }) {
                 PrimaryButton(
-                    imageName: isBooked ? "scribble" : "",
-                    label: isBooked ? "" : "Book Now",
+                    imageName: isBooked ? "checkmark.circle.fill" : "",
+                    label: isBooked ? "Done" : "Book Now",
                     textColor: .white,
                     backgroundColor:.red
                 )
             }
 
-        
             Spacer()
+            
         }
+        .navigationTitle("Palm Ridge Resort")
     }
 }
 
-struct LocationDetailsScreen_Previews: PreviewProvider {
+struct DestinationDetailsScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetailsScreen()
+        DestinationDetailsScreen()
     }
 }
