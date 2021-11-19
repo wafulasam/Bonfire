@@ -11,6 +11,7 @@
 		AC05D68C2746CBC600E66E3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05D68B2746CBC600E66E3A /* ContentView.swift */; };
 		AC05D68E2746CBC800E66E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC05D68D2746CBC800E66E3A /* Assets.xcassets */; };
 		AC05D6912746CBC800E66E3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC05D6902746CBC800E66E3A /* Preview Assets.xcassets */; };
+		AC283E75274810BD009BB057 /* TabNavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC283E74274810BD009BB057 /* TabNavigationScreen.swift */; };
 		AC472A312746CFEF00BBFA86 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC472A302746CFEF00BBFA86 /* HomeScreen.swift */; };
 		AC472A382746E1CB00BBFA86 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC472A372746E1CB00BBFA86 /* CircleImage.swift */; };
 		AC472A3A2746E6BF00BBFA86 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC472A392746E6BF00BBFA86 /* LoginScreen.swift */; };
@@ -28,6 +29,7 @@
 		AC05D68B2746CBC600E66E3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC05D68D2746CBC800E66E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC05D6902746CBC800E66E3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC283E74274810BD009BB057 /* TabNavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationScreen.swift; sourceTree = "<group>"; };
 		AC472A302746CFEF00BBFA86 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		AC472A372746E1CB00BBFA86 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		AC472A392746E6BF00BBFA86 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				AC472A392746E6BF00BBFA86 /* LoginScreen.swift */,
 				ACE927A22747B05100BE06FD /* MapScreen.swift */,
 				ACE927A42747B2E600BE06FD /* LocationDetailsScreen.swift */,
+				AC283E74274810BD009BB057 /* TabNavigationScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				ACE927A12747AFD500BE06FD /* MapView.swift in Sources */,
 				ACE927A52747B2E600BE06FD /* LocationDetailsScreen.swift in Sources */,
 				AC05D68C2746CBC600E66E3A /* ContentView.swift in Sources */,
+				AC283E75274810BD009BB057 /* TabNavigationScreen.swift in Sources */,
 				AC05D68A2746CBC600E66E3A /* BonfireApp.swift in Sources */,
 				AC472A312746CFEF00BBFA86 /* HomeScreen.swift in Sources */,
 				AC472A382746E1CB00BBFA86 /* CircleImage.swift in Sources */,
