@@ -5,11 +5,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        // HomeScreen()
-        // LoginScreen()
-        // MapScreen()
-        // DestinationDetailsScreen()
-        TabNavigationScreen()
+        // SplashScreen()
+        BottomTabsNavigation()
     }
 }
 
