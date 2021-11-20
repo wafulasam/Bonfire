@@ -22,18 +22,18 @@ struct CardView: View {
                 VStack (alignment: .leading) {
                     Text("\(headline)".uppercased())
                         .font(.headline)
-                        //.foregroundColor(.secondary)
+                        .foregroundColor(.secondary)
                     Text("\(title)")
                         .font(.title)
                         .fontWeight(.black)
-                        //.foregroundColor(.primary)
+                        .foregroundColor(.primary)
                         .lineLimit(3)
                     Text("\(caption)")
                         //.font(.caption)
-                        //.foregroundColor(.secondary)
+                        .foregroundColor(.secondary)
                     Text("\(description)")
                         .font(.caption)
-                        //.foregroundColor(.secondary)
+                        .foregroundColor(.primary)
                 }
                 .layoutPriority(100)
                 
