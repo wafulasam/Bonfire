@@ -23,6 +23,7 @@
 		ACB2DDB82748F7ED00CEE895 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB72748F7ED00CEE895 /* AuthScreen.swift */; };
 		ACB2DDBB2748F97900CEE895 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDBA2748F97900CEE895 /* CardView.swift */; };
 		ACB2DDBE2749003100CEE895 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDBD2749003100CEE895 /* BackgroundView.swift */; };
+		ACE3EBE1274AE0CA00E68588 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3EBE0274AE0CA00E68588 /* TopBar.swift */; };
 		ACE9279B27479DCD00BE06FD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE9279A27479DCD00BE06FD /* Launch Screen.storyboard */; };
 		ACE9279D2747A02A00BE06FD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9279C2747A02A00BE06FD /* PrimaryButton.swift */; };
 		ACE9279F2747A90300BE06FD /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9279E2747A90300BE06FD /* SocialButton.swift */; };
@@ -48,6 +49,7 @@
 		ACB2DDB72748F7ED00CEE895 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
 		ACB2DDBA2748F97900CEE895 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ACB2DDBD2749003100CEE895 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		ACE3EBE0274AE0CA00E68588 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		ACE9279A27479DCD00BE06FD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ACE9279C2747A02A00BE06FD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		ACE9279E2747A90300BE06FD /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB2DDBD2749003100CEE895 /* BackgroundView.swift */,
+				ACE3EBE0274AE0CA00E68588 /* TopBar.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				AC472A382746E1CB00BBFA86 /* CircleImage.swift in Sources */,
 				AC63B18A27484684003C79D4 /* DestinationDetailsScreen.swift in Sources */,
 				ACB2DDB82748F7ED00CEE895 /* AuthScreen.swift in Sources */,
+				ACE3EBE1274AE0CA00E68588 /* TopBar.swift in Sources */,
 				AC472A3A2746E6BF00BBFA86 /* LoginScreen.swift in Sources */,
 				ACB2DDBB2748F97900CEE895 /* CardView.swift in Sources */,
 				ACE9279F2747A90300BE06FD /* SocialButton.swift in Sources */,

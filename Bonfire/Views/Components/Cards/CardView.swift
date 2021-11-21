@@ -30,7 +30,7 @@ struct CardView: View {
                         .lineLimit(3)
                     Text("\(caption)")
                         //.font(.caption)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(Color("green"))
                     Text("\(description)")
                         .font(.caption)
                         .foregroundColor(.primary)

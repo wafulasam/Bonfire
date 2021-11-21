@@ -5,6 +5,7 @@ import SwiftUI
 
 struct BottomTabsNavigation: View {
     var body: some View {
+        TopBar(title:"Explore")
         // Tab views
         TabView {
             ExploreScreen()
@@ -29,7 +30,7 @@ struct BottomTabsNavigation: View {
                     Text("Profile")
                 }
         }
-        .accentColor(.red)
+        .accentColor(Color("red"))
         .onAppear() {
             //UITabBar.appearance().barTintColor = .yellow
             UITabBar.appearance().backgroundColor = UIColor.white
