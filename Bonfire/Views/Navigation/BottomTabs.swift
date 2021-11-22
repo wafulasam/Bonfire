@@ -38,15 +38,25 @@ struct BottomTabs: View {
                 }
             
             //Tab 4
-            Color.white
+            Color("red")
                 .edgesIgnoringSafeArea(.all)
-                .overlay(AuthScreen())
-                .statusBarStyle(.darkContent) //set status bar style here
-                // .badge(10)
+                .overlay(ProfileScreen().foregroundColor(.white))
+                .statusBarStyle(.lightContent) //set status bar style here
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("Profile")
                 }
+            
+            //DARK TEXT ON WHITE BACKGROUND
+//            Color.white
+//                .edgesIgnoringSafeArea(.all)
+//                .overlay(Text("Dark text"))
+//                .statusBarStyle(.darkContent) //set status bar style here
+//                // .badge(10)
+//                .tabItem {
+//                    Image(systemName: "person.circle")
+//                    Text("Profile")
+//                }
             
         }
         .accentColor(Color("red"))
