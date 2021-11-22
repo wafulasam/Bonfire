@@ -8,7 +8,7 @@ struct BottomTabs: View {
         TabView {
             
             //Tab  1 will have a light status bar
-            Color("green")
+            Color("red")
                 .edgesIgnoringSafeArea(.all)
                 .overlay(ExploreScreen().foregroundColor(.white)) // render screen then style it
                 .statusBarStyle(.lightContent) //set status bar style here
@@ -28,27 +28,28 @@ struct BottomTabs: View {
                 }
             
             //Tab 3
-            Color.white
+            Color("red")
                 .edgesIgnoringSafeArea(.all)
-                .overlay(InboxScreen())
-                .statusBarStyle(.darkContent) //set status bar style here
-                // .badge(10)
+                .overlay(InboxScreen().foregroundColor(.white))
+                .statusBarStyle(.lightContent) //set status bar style here
                 .tabItem {
                     Image(systemName: "message")
                     Text("Inbox")
                 }
             
             //Tab 4
-            Color(.systemBlue)
+            Color.white
                 .edgesIgnoringSafeArea(.all)
-                .overlay(AuthScreen().foregroundColor(.white))
-                .statusBarStyle(.lightContent) //set status bar style here
+                .overlay(AuthScreen())
+                .statusBarStyle(.darkContent) //set status bar style here
+                // .badge(10)
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("Profile")
                 }
+            
         }
-        .accentColor(Color("green"))
+        .accentColor(Color("red"))
 //        .onAppear() {
 //            UITabBar.appearance().barTintColor = .yellow
 //        }
