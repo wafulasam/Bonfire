@@ -6,63 +6,33 @@ import SwiftUI
 struct BottomTabs: View {
     var body: some View {
         TabView {
-            
-            //Tab  1 will have a light status bar
-            Color("red")
-                .edgesIgnoringSafeArea(.all)
-                .overlay(ExploreScreen().foregroundColor(.white)) // render screen then style it
-                .statusBarStyle(.lightContent) //set status bar style here
-                .tabItem {
-                    Image(systemName: "globe.europe.africa")
-                    Text("Explore")
-                }
-            
-            //Tab 2
-            Color("red")
-                .edgesIgnoringSafeArea(.all)
-                .overlay(TripsAndBookings().foregroundColor(.white))
-                .statusBarStyle(.lightContent) //set status bar style here
+            TripsAndBookings()
                 .tabItem {
                     Image(systemName: "airplane")
                     Text("Trips and Bookings")
                 }
+                .tag(2)
             
-            //Tab 3
-            Color("red")
-                .edgesIgnoringSafeArea(.all)
-                .overlay(InboxScreen().foregroundColor(.white))
-                .statusBarStyle(.lightContent) //set status bar style here
+            InboxScreen()
+                //.edgesIgnoringSafeArea(.top)
+                //.statusBarStyle(.lightContent) //set status bar style here
+            
                 .tabItem {
                     Image(systemName: "message")
                     Text("Inbox")
                 }
+                .tag(3)
+                //.badge(10)
             
-            //Tab 4
-            Color("red")
-                .edgesIgnoringSafeArea(.all)
-                .overlay(ProfileScreen().foregroundColor(.white))
-                .statusBarStyle(.lightContent) //set status bar style here
+            ProfileScreen()
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("Profile")
                 }
-            
-            //DARK TEXT ON WHITE BACKGROUND
-//            Color.white
-//                .edgesIgnoringSafeArea(.all)
-//                .overlay(Text("Dark text"))
-//                .statusBarStyle(.darkContent) //set status bar style here
-//                // .badge(10)
-//                .tabItem {
-//                    Image(systemName: "person.circle")
-//                    Text("Profile")
-//                }
-            
+                .tag(4)
         }
         .accentColor(Color("red"))
-//        .onAppear() {
-//            UITabBar.appearance().barTintColor = .yellow
-//        }
+        //.onAppear() { UITabBar.appearance().barTintColor = .yellow }
     }
 }
 

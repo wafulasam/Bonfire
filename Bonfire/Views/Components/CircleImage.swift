@@ -6,8 +6,8 @@ import SwiftUI
 
 struct CircleImage: View {
     
-    var width: Int
-    var height: Int
+    var width: Double
+    var height: Double
     var strokeColor: Color
     var lineWidth: Bool
     var shadow: Bool
@@ -17,7 +17,7 @@ struct CircleImage: View {
             .resizable()
             .scaledToFit()
             .clipShape(Circle())
-            .frame(width: 100, height: 100)
+            .frame(width: width, height: height)
             .overlay(Circle().stroke(strokeColor, lineWidth: lineWidth ? 2 : 0))
             .shadow(radius: shadow ? 5 : 0)
     }
