@@ -6,7 +6,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         // SplashScreen()
-        BottomTabsNavigation()
+        // BottomTabsNavigation()
+        BottomTabs()
     }
 }
 
