@@ -6,6 +6,7 @@ import SwiftUI
 
 struct ChatList: View {
     
+    var avatar: String
     var name: String
     var message: String
     var time: String
@@ -13,6 +14,7 @@ struct ChatList: View {
     var body: some View {
         HStack {
             CircleImage(
+                imageName: avatar,
                 width: 50,
                 height: 50,
                 strokeColor: .blue,

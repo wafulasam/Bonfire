@@ -19,8 +19,8 @@ struct InboxScreen: View {
     
     //data
     @State var users = [
-       User(id: 1, name: "Cris Njoki", avatar: "sam", message: "See you soon...", time: "13:00"),
-       User(id: 2, name: "Joy Kendi",  avatar: "sam", message: "Alright then", time: "09:00"),
+       User(id: 1, name: "Cris Njoki", avatar: "crisnjoki", message: "See you soon...", time: "13:00"),
+       User(id: 2, name: "Joy Kendi",  avatar: "joykendi", message: "Alright then", time: "09:00"),
        User(id: 3, name: "Jay Take A Pic", avatar: "sam", message: "Cool.", time: "23:00"),
        User(id: 4, name: "Patricia Kihoro", avatar: "sam", message: "Tomorrow morning", time: "21:00"),
        User(id: 5, name: "Sharon Mundia", avatar: "sam", message: "Wednesday morning.", time: "11:37"),
@@ -36,9 +36,10 @@ struct InboxScreen: View {
         NavigationView {
             // chat list
             List(users, id:\.self){ user in
-                NavigationLink(destination: ChatView(username: user.name),
+                NavigationLink(destination: ChatView(username: user.name, avatar: user.avatar),
                     label: {
                         ChatList(
+                            avatar: user.avatar,
                             name: user.name,
                             message: user.message,
                             time: user.time

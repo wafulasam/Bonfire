@@ -16,6 +16,7 @@ struct LoginScreen: View {
                 .padding(.bottom, 20)
             // image
             CircleImage(
+                imageName: "sam",
                 width: 100,
                 height: 100,
                 strokeColor: .blue,

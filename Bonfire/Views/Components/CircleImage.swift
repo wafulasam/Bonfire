@@ -6,6 +6,7 @@ import SwiftUI
 
 struct CircleImage: View {
     
+    var imageName: String
     var width: Double
     var height: Double
     var strokeColor: Color
@@ -13,7 +14,7 @@ struct CircleImage: View {
     var shadow: Bool
 
     var body: some View {
-        Image("sam")
+        Image("\(imageName)")
             .resizable()
             .scaledToFit()
             .clipShape(Circle())

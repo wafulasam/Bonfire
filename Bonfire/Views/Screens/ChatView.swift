@@ -7,17 +7,26 @@ struct ChatView: View {
     
     //types
 
-    let username: String
+    var username: String
+    var avatar:String
     
-    //var selected:String?
-    //@Binding var selectedUser: String?
-    //var user: User
     
     var body: some View {
         VStack {
             Text("Hi \(username) 👋")
         }
         .navigationTitle("\(username)")
+        .navigationBarItems(
+            trailing:
+                CircleImage(
+                imageName:avatar,
+                width: 35,
+                height: 35,
+                strokeColor: .white,
+                lineWidth:true,
+                shadow: false
+            )
+        )
     }
 }
 
