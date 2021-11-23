@@ -9,7 +9,7 @@ struct InboxScreen: View {
     @State private var createMessageAlert = false
     
     //types
-    struct User: Identifiable {
+    struct User: Identifiable, Hashable {
         let id: Int
         let name: String
         let avatar: String
@@ -35,8 +35,8 @@ struct InboxScreen: View {
         
         NavigationView {
             // chat list
-            List(users){ user in
-                NavigationLink(destination: ChatView(),
+            List(users, id:\.self){ user in
+                NavigationLink(destination: ChatView(username: user.name),
                     label: {
                         ChatList(
                             name: user.name,
