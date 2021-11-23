@@ -7,6 +7,8 @@ import SwiftUI
 struct ChatList: View {
     
     var name: String
+    var message: String
+    var time: String
     
     var body: some View {
         HStack {
@@ -22,13 +24,13 @@ struct ChatList: View {
                 Text("\(name)")
                     .foregroundColor(.primary)
                     .fontWeight(.semibold)
-                Text("See you soon...")
+                Text("\(message)")
                     .foregroundColor(.secondary)
             }
             
             Spacer()
             
-            Text("21:00")
+            Text("\(time)")
                 .foregroundColor(Color("red"))
         }.padding(.vertical)
     }

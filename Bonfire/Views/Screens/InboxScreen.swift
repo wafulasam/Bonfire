@@ -19,13 +19,13 @@ struct InboxScreen: View {
     
     //data
     @State var users = [
-       User(id: 1, name: "Cris Njoki", avatar: "sam", message: "See you soon...", time: "21:00"),
-       User(id: 2, name: "Joy Kendi",  avatar: "sam", message: "See you soon...", time: "21:00"),
-       User(id: 3, name: "Jay Take A Pic", avatar: "sam", message: "See you soon...", time: "21:00"),
-       User(id: 4, name: "Patricia Kihoro", avatar: "sam", message: "See you soon...", time: "21:00"),
-       User(id: 5, name: "Sharon Mundia", avatar: "sam", message: "See you soon...", time: "21:00"),
-       User(id: 6, name: "Nancie Mwai", avatar: "sam", message: "See you soon...", time: "21:00"),
-       User(id: 7, name: "Sharon Mwangi", avatar: "sam", message: "See you soon...", time: "21:00"),
+       User(id: 1, name: "Cris Njoki", avatar: "sam", message: "See you soon...", time: "13:00"),
+       User(id: 2, name: "Joy Kendi",  avatar: "sam", message: "Alright then", time: "09:00"),
+       User(id: 3, name: "Jay Take A Pic", avatar: "sam", message: "Cool.", time: "23:00"),
+       User(id: 4, name: "Patricia Kihoro", avatar: "sam", message: "Tomorrow morning", time: "21:00"),
+       User(id: 5, name: "Sharon Mundia", avatar: "sam", message: "Wednesday morning.", time: "11:37"),
+       User(id: 6, name: "Nancie Mwai", avatar: "sam", message: "Next week Friday.", time: "22:42"),
+       User(id: 7, name: "Sharon Mwangi", avatar: "sam", message: "Welcome", time: "21:32"),
      ]
     
     //@State private var selection: String? = nil
@@ -38,14 +38,29 @@ struct InboxScreen: View {
             List(users){ user in
                 NavigationLink(destination: ChatView(),
                     label: {
-                        ChatList(name: user.name)
+                        ChatList(
+                            name: user.name,
+                            message: user.message,
+                            time: user.time
+                        )
                     }
                 )
             }
             .navigationTitle("Messages")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(trailing: Button(action: { createMessageAlert = true }, label: { Image(systemName: "plus.message") }))
+            .navigationBarItems(
+                leading: Image(systemName: "envelope").foregroundColor(.white),
+                trailing: Button(action: { createMessageAlert = true }, label: { Image(systemName: "plus.message")})
+            )
         }
+        .onAppear {
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+            appearance.backgroundColor = UIColor(Color("red"))
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        }
+        .accentColor(Color(.white))
+        
         .alert(isPresented: $createMessageAlert) {
             Alert(
                 title: Text("Notice").foregroundColor(.red),

@@ -5,7 +5,15 @@ import SwiftUI
 
 struct BottomTabs: View {
     var body: some View {
+        StatusBar()
         TabView {
+            ExploreScreen()
+                .tabItem {
+                    Image(systemName: "globe.europe.africa")
+                    Text("Explore")
+                }
+                .tag(1)
+            
             TripsAndBookings()
                 .tabItem {
                     Image(systemName: "airplane")

@@ -13,7 +13,7 @@ struct ChatView: View {
         VStack {
             Text("Chat view")
         }
-        .navigationTitle("Name")
+        .navigationTitle("Joy Kendi")
     }
 }
 

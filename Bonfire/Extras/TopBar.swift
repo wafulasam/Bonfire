@@ -8,7 +8,7 @@ struct TopBar: View {
     var title: String
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack() {
             HStack {
                 Text("\(title)")
                     .font(.system(size: 20))
@@ -32,8 +32,8 @@ struct TopBar: View {
 //}
 
 // light or dark content
-class Host : UIHostingController<ContentView> {
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-}
+//class Host : UIHostingController<ContentView> {
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
+//}

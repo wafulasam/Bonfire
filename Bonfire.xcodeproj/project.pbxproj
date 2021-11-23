@@ -35,6 +35,7 @@
 		ACE927A32747B05100BE06FD /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE927A22747B05100BE06FD /* MapScreen.swift */; };
 		ACEB077B274BC0DC001AEC0D /* BottomTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB077A274BC0DC001AEC0D /* BottomTabs.swift */; };
 		ACEB0783274BCA1A001AEC0D /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB0782274BCA1A001AEC0D /* ChatList.swift */; };
+		ACEE8281274D14D5002D4587 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE8280274D14D5002D4587 /* StatusBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		ACE927A22747B05100BE06FD /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		ACEB077A274BC0DC001AEC0D /* BottomTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabs.swift; sourceTree = "<group>"; };
 		ACEB0782274BCA1A001AEC0D /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		ACEE8280274D14D5002D4587 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		AC472A322746D0CD00BBFA86 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				ACEE8280274D14D5002D4587 /* StatusBar.swift */,
 				ACEB0782274BCA1A001AEC0D /* ChatList.swift */,
 				ACB2DDBD2749003100CEE895 /* BackgroundView.swift */,
 				ACB2DDBA2748F97900CEE895 /* CardView.swift */,
@@ -305,6 +308,7 @@
 				ACB2DDB82748F7ED00CEE895 /* AuthScreen.swift in Sources */,
 				ACE3EBE1274AE0CA00E68588 /* TopBar.swift in Sources */,
 				AC472A3A2746E6BF00BBFA86 /* LoginScreen.swift in Sources */,
+				ACEE8281274D14D5002D4587 /* StatusBar.swift in Sources */,
 				ACB2DDBB2748F97900CEE895 /* CardView.swift in Sources */,
 				ACE9279F2747A90300BE06FD /* SocialButton.swift in Sources */,
 			);
