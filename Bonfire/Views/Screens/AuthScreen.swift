@@ -15,6 +15,13 @@ struct AuthScreen: View {
             
             VStack ( spacing: 20){
                 
+                // logo
+                Image("logoWhite")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .padding(.bottom,100)
+                
                 Button(action: {}) {
                     PrimaryButton(
                         imageName: "lock.rotation",
