@@ -21,6 +21,7 @@ struct TopBar: View {
         .padding(.top, (UIApplication.shared.windows.last?.safeAreaInsets.top)! + 10)
         .background(Color("red"))
         .edgesIgnoringSafeArea(.top)
+        .statusBarStyle(.lightContent) 
     }
 }
 

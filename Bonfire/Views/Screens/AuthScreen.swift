@@ -8,27 +8,28 @@ struct AuthScreen: View {
     var body: some View {
         
         ZStack {
-            BackgroundView(topColor: Color("red"), bottomColor: Color("red"))
+            //BackgroundView(topColor: Color("red"), bottomColor: Color("red"))
+            BackgroundView(topColor: .black, bottomColor: .black)
                 .edgesIgnoringSafeArea(.all)
                 .statusBarStyle(.lightContent) //set status bar style here
             
-            VStack {
+            VStack ( spacing: 20){
                 
                 Button(action: {}) {
-                    SocialButton(
+                    PrimaryButton(
                         imageName: "lock.rotation",
                         label: "Login",
-                        textColor: Color("red"),
-                        backgroundColor: .white
+                        textColor: .white,
+                        backgroundColor: Color("red")
                     )
                 }.padding(.bottom)
                 
                 Button(action: {}) {
-                    SocialButton(
+                    PrimaryButton(
                         imageName: "person.circle",
                         label: "Create Account",
-                        textColor: Color("green"),
-                        backgroundColor: .white
+                        textColor: .white,
+                        backgroundColor: Color("green")
                     )
                 }
                 
