@@ -48,6 +48,7 @@ struct CardView: View {
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
         )
         .padding([.top, .horizontal])
+        //.shadow(radius: 1)
     }
 }
 

@@ -5,9 +5,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        AuthScreen()
+        // AuthScreen()
         // SplashScreen()
-        // BottomTabs()
+        BottomTabs()
     }
 }
 
