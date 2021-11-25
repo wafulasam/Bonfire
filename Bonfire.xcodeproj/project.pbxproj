@@ -16,12 +16,10 @@
 		AC63B1882748413A003C79D4 /* DestinationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63B1872748413A003C79D4 /* DestinationScreen.swift */; };
 		AC63B18A27484684003C79D4 /* DestinationDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63B18927484684003C79D4 /* DestinationDetailsScreen.swift */; };
 		AC8502A2274B730400992A59 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8502A1274B730400992A59 /* StatusBarController.swift */; };
-		AC8502A7274B76C700992A59 /* BottomTabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8502A6274B76C700992A59 /* BottomTabViews.swift */; };
 		ACB2DDAD2748F58400CEE895 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDAC2748F58400CEE895 /* SplashScreen.swift */; };
-		ACB2DDB02748F63E00CEE895 /* BottomTabsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDAF2748F63E00CEE895 /* BottomTabsNavigation.swift */; };
-		ACB2DDB22748F6CA00CEE895 /* ExploreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB12748F6CA00CEE895 /* ExploreScreen.swift */; };
+		ACB2DDB22748F6CA00CEE895 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB12748F6CA00CEE895 /* Home.swift */; };
 		ACB2DDB42748F74000CEE895 /* TripsAndBookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB32748F74000CEE895 /* TripsAndBookings.swift */; };
-		ACB2DDB62748F7A000CEE895 /* InboxScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB52748F7A000CEE895 /* InboxScreen.swift */; };
+		ACB2DDB62748F7A000CEE895 /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB52748F7A000CEE895 /* Inbox.swift */; };
 		ACB2DDB82748F7ED00CEE895 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDB72748F7ED00CEE895 /* AuthScreen.swift */; };
 		ACB2DDBB2748F97900CEE895 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDBA2748F97900CEE895 /* CardView.swift */; };
 		ACB2DDBE2749003100CEE895 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2DDBD2749003100CEE895 /* BackgroundView.swift */; };
@@ -49,12 +47,10 @@
 		AC63B1872748413A003C79D4 /* DestinationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationScreen.swift; sourceTree = "<group>"; };
 		AC63B18927484684003C79D4 /* DestinationDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailsScreen.swift; sourceTree = "<group>"; };
 		AC8502A1274B730400992A59 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
-		AC8502A6274B76C700992A59 /* BottomTabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabViews.swift; sourceTree = "<group>"; };
 		ACB2DDAC2748F58400CEE895 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		ACB2DDAF2748F63E00CEE895 /* BottomTabsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabsNavigation.swift; sourceTree = "<group>"; };
-		ACB2DDB12748F6CA00CEE895 /* ExploreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreen.swift; sourceTree = "<group>"; };
+		ACB2DDB12748F6CA00CEE895 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		ACB2DDB32748F74000CEE895 /* TripsAndBookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsAndBookings.swift; sourceTree = "<group>"; };
-		ACB2DDB52748F7A000CEE895 /* InboxScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxScreen.swift; sourceTree = "<group>"; };
+		ACB2DDB52748F7A000CEE895 /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
 		ACB2DDB72748F7ED00CEE895 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
 		ACB2DDBA2748F97900CEE895 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ACB2DDBD2749003100CEE895 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -152,9 +148,9 @@
 			children = (
 				ACB2DDB72748F7ED00CEE895 /* AuthScreen.swift */,
 				ACB2DDAC2748F58400CEE895 /* SplashScreen.swift */,
-				ACB2DDB12748F6CA00CEE895 /* ExploreScreen.swift */,
+				ACB2DDB12748F6CA00CEE895 /* Home.swift */,
 				ACB2DDB32748F74000CEE895 /* TripsAndBookings.swift */,
-				ACB2DDB52748F7A000CEE895 /* InboxScreen.swift */,
+				ACB2DDB52748F7A000CEE895 /* Inbox.swift */,
 				ACD5A89A274BB137004742BF /* ChatView.swift */,
 				ACD3628B274B8F810067E212 /* ProfileScreen.swift */,
 			);
@@ -187,10 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				ACE3EBE0274AE0CA00E68588 /* TopBar.swift */,
-				ACB2DDAF2748F63E00CEE895 /* BottomTabsNavigation.swift */,
 				ACE927A02747AFD500BE06FD /* MapView.swift */,
 				ACE927A22747B05100BE06FD /* MapScreen.swift */,
-				AC8502A6274B76C700992A59 /* BottomTabViews.swift */,
 				AC63B1872748413A003C79D4 /* DestinationScreen.swift */,
 				AC472A392746E6BF00BBFA86 /* LoginScreen.swift */,
 				AC63B18927484684003C79D4 /* DestinationDetailsScreen.swift */,
@@ -287,19 +281,17 @@
 			files = (
 				ACEB0783274BCA1A001AEC0D /* ChatList.swift in Sources */,
 				ACB2DDBE2749003100CEE895 /* BackgroundView.swift in Sources */,
-				ACB2DDB02748F63E00CEE895 /* BottomTabsNavigation.swift in Sources */,
 				ACD5A89B274BB137004742BF /* ChatView.swift in Sources */,
 				AC63B1882748413A003C79D4 /* DestinationScreen.swift in Sources */,
 				ACE927A32747B05100BE06FD /* MapScreen.swift in Sources */,
 				ACE9279D2747A02A00BE06FD /* PrimaryButton.swift in Sources */,
-				ACB2DDB62748F7A000CEE895 /* InboxScreen.swift in Sources */,
-				AC8502A7274B76C700992A59 /* BottomTabViews.swift in Sources */,
+				ACB2DDB62748F7A000CEE895 /* Inbox.swift in Sources */,
 				ACB2DDB42748F74000CEE895 /* TripsAndBookings.swift in Sources */,
 				ACE927A12747AFD500BE06FD /* MapView.swift in Sources */,
 				AC05D68C2746CBC600E66E3A /* ContentView.swift in Sources */,
 				AC05D68A2746CBC600E66E3A /* BonfireApp.swift in Sources */,
 				ACB2DDAD2748F58400CEE895 /* SplashScreen.swift in Sources */,
-				ACB2DDB22748F6CA00CEE895 /* ExploreScreen.swift in Sources */,
+				ACB2DDB22748F6CA00CEE895 /* Home.swift in Sources */,
 				AC472A382746E1CB00BBFA86 /* CircleImage.swift in Sources */,
 				AC8502A2274B730400992A59 /* StatusBarController.swift in Sources */,
 				ACD3628C274B8F810067E212 /* ProfileScreen.swift in Sources */,

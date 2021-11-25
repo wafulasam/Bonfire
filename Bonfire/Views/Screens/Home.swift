@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-struct ExploreScreen: View {
+struct Home: View {
     
     //types
     struct Package: Hashable {
@@ -52,8 +52,14 @@ struct ExploreScreen: View {
                 .navigationTitle("Packages")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(
-                    leading: Button(action: {}, label: { Image(systemName: "list.bullet")}),
-                    trailing: Button(action: {}, label: { Image(systemName: "magnifyingglass")})
+                    leading: Button(
+                        action: {},
+                        label: { Image("logoWhite").resizable().scaledToFit().frame(width: 30, height: 30)}
+                    ),
+                    trailing: Button(
+                        action: {},
+                        label: { Image(systemName: "magnifyingglass")}
+                    )
                 )
             }.background(Color("lightGray"))
         }
@@ -67,8 +73,8 @@ struct ExploreScreen: View {
     }
 }
 
-struct ExploreScreen_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ExploreScreen()
+        Home()
     }
 }

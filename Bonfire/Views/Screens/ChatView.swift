@@ -5,11 +5,8 @@ import SwiftUI
 
 struct ChatView: View {
     
-    //types
-
     var username: String
     var avatar:String
-    
     
     var body: some View {
         VStack {

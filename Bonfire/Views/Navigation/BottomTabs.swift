@@ -7,24 +7,23 @@ struct BottomTabs: View {
     var body: some View {
         StatusBar()
         TabView {
-            ExploreScreen()
+            Home()
                 .tabItem {
-                    Image(systemName: "globe.europe.africa")
-                    Text("Explore")
+                    Image(systemName: "house")
+                    Text("Home")
                 }
                 .tag(1)
             
             TripsAndBookings()
                 .tabItem {
-                    Image(systemName: "airplane")
+                    Image(systemName: "airplane.departure")
                     Text("Trips and Bookings")
                 }
                 .tag(2)
             
-            InboxScreen()
+            Inbox()
                 //.edgesIgnoringSafeArea(.top)
                 //.statusBarStyle(.lightContent) //set status bar style here
-            
                 .tabItem {
                     Image(systemName: "message")
                     Text("Inbox")
@@ -34,7 +33,7 @@ struct BottomTabs: View {
             
             ProfileScreen()
                 .tabItem {
-                    Image(systemName: "person.circle")
+                    Image(systemName: "person")
                     Text("Profile")
                 }
                 .tag(4)

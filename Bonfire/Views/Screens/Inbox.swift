@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-struct InboxScreen: View {
+struct Inbox: View {
     
     //alert
     @State private var createMessageAlert = false
@@ -50,7 +50,10 @@ struct InboxScreen: View {
             .navigationTitle("Messages")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
-                leading: Image(systemName: "envelope").foregroundColor(.white),
+                leading: Button(
+                    action: {},
+                    label: { Image("logoWhite").resizable().scaledToFit().frame(width: 30, height: 30)}
+                ),
                 trailing: Button(action: { createMessageAlert = true }, label: { Image(systemName: "plus.message")})
             )
         }
@@ -72,9 +75,9 @@ struct InboxScreen: View {
 }
 
 #if DEBUG
-struct InboxScreen_Previews: PreviewProvider {
+struct Inbox_Previews: PreviewProvider {
     static var previews: some View {
-        InboxScreen()
+        Inbox()
     }
 }
 #endif
