@@ -7,7 +7,7 @@ struct CategoryRow: View {
     
     //types
     struct Package: Hashable {
-        let tag: String
+        let category: String
         let hotel: String
         let destination: String
         let imageName: String
@@ -18,7 +18,7 @@ struct CategoryRow: View {
     //data
     @State var packages = [
        Package(
-        tag: "Christmas deal",
+        category: "Christmas deal",
         hotel: "Palm Beach Resort",
         destination: "Diani",
         imageName: "diani",
@@ -26,7 +26,7 @@ struct CategoryRow: View {
         rating: 5
        ),
        Package(
-        tag: "Honeymoon deal",
+        category: "Honeymoon deal",
         hotel: "Mapenzi Beach Resort",
         destination: "Zanzibar",
         imageName: "zanzibar",
@@ -34,7 +34,7 @@ struct CategoryRow: View {
         rating: 3
       ),
        Package(
-        tag: "Christmas deal",
+        category: "Christmas deal",
         hotel: "Palm Beach Resort",
         destination: "Diani",
         imageName: "diani",
@@ -56,7 +56,16 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(packages, id: \.self) { package in
-                        NavigationLink(destination: Text(package.hotel),
+                        NavigationLink(
+                            destination:
+                                PackageDetails(
+                                    category: package.category,
+                                    hotel: package.hotel,
+                                    destination: package.destination,
+                                    imageName: package.imageName,
+                                    description: package.description,
+                                    rating: 5
+                                ),
                             label: {
                                 CategoryItem(
                                     imageName: package.imageName,
