@@ -4,10 +4,15 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State private var showSearchBar: Bool = false
 
     var body: some View {
         NavigationView {
             ScrollView {
+                
+                //search
+                showSearchBar ? SearchBar() : nil
                 
                 // items
                 Featured()
@@ -24,7 +29,7 @@ struct Home: View {
                         label: { Image("logoWhite").resizable().scaledToFit().frame(width: 30, height: 30)}
                     ),
                     trailing: Button(
-                        action: {},
+                        action: { showSearchBar.toggle() },
                         label: { Image(systemName: "magnifyingglass")}
                     )
                 )

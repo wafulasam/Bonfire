@@ -63,7 +63,7 @@ struct DestinationDetailsScreen: View {
                     imageName: isBooked ? "checkmark.circle.fill" : "",
                     label: isBooked ? "Done" : "Book Now",
                     textColor: .white,
-                    backgroundColor:.red
+                    backgroundColor:Color("red")
                 )
             }
 
