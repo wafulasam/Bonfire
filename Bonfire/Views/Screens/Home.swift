@@ -4,51 +4,18 @@
 import SwiftUI
 
 struct Home: View {
-    
-    //types
-    struct Package: Hashable {
-        let imageName: String
-        let headline: String
-        let title: String
-        let caption: String
-        let description: String
-    }
-    
-    //data
-    @State var packages = [
-       Package(
-        imageName: "diani",
-        headline: "Christmas deal",
-        title: "Palm Beach Resort",
-        caption: "Diani",
-        description: "Enjoy your Christmas in Diani"
-       ),
-       Package(
-        imageName: "zanzibar",
-        headline: "Honeymoon deal",
-        title: "Mapenzi Beach Resort",
-        caption: "Zanzibar",
-        description: "Enjoy your honeymoon in Zanzibar"
-      )
-    ]
-    
+
     var body: some View {
         NavigationView {
             ScrollView {
-                // packages
-                ForEach(packages, id: \.self) { package in
-                    NavigationLink(destination: Text(package.title),
-                        label: {
-                            CardView(
-                                imageName: package.imageName,
-                                headline: package.headline,
-                                title: package.title,
-                                caption: package.caption,
-                                description: package.description
-                            )
-                        }
-                    )
-                }
+                
+                // items
+                Featured()
+                CategoryRow(categoryTitle: "Jamuhuri Offer")
+                CategoryRow(categoryTitle: "Christmas Deals")
+                CategoryRow(categoryTitle: "Honeymoon Deals")
+                
+                // navigation bar
                 .navigationTitle("Packages")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(
@@ -61,7 +28,8 @@ struct Home: View {
                         label: { Image(systemName: "magnifyingglass")}
                     )
                 )
-            }.background(Color("lightGray"))
+                
+            }
         }
         .onAppear {
             let appearance = UINavigationBarAppearance()
