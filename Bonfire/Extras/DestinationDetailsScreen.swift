@@ -16,6 +16,7 @@ struct DestinationDetailsScreen: View {
             
             // circle image
             CircleImage(
+                imageName:"sam",
                 width: 100,
                 height: 100,
                 strokeColor: .white,
@@ -62,7 +63,7 @@ struct DestinationDetailsScreen: View {
                     imageName: isBooked ? "checkmark.circle.fill" : "",
                     label: isBooked ? "Done" : "Book Now",
                     textColor: .white,
-                    backgroundColor:.red
+                    backgroundColor:Color("red")
                 )
             }
 

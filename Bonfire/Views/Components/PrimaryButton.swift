@@ -19,7 +19,7 @@ struct PrimaryButton: View {
                 .frame(width: 20, height: 20)
             Text(label)
         }
-        .frame(width: 280, height: 50)
+        .frame(width: 350, height: 50)
         .background(backgroundColor)
         .foregroundColor(textColor)
         .font(.system(size: 20, weight: .bold, design: .default))
